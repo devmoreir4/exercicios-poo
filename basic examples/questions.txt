@@ -1,0 +1,247 @@
+Exercício 1: Implementação de uma Classe Lampada
+Descrição: Crie uma classe Lampada que possui um atributo ligada (bool). Adicione métodos para ligar (ligar), desligar (desligar) e verificar o estado (estaLigada).
+
+Casos de Teste:
+
+Verificar o estado inicial da lâmpada (deve estar desligada).
+Ligar a lâmpada e verificar se estaLigada retorna true.
+Desligar a lâmpada após ligá-la e verificar se estaLigada retorna false.
+Tentar ligar a lâmpada quando ela já está ligada e verificar se o estado permanece inalterado.
+Tentar desligar a lâmpada quando ela já está desligada e verificar se o estado permanece inalterado.
+
+--------------------
+
+Exercício 2: Implementação de uma Classe Caneta
+Descrição: Desenvolva uma classe Caneta que contém um atributo nivelTinta (int) que varia de 0 a 100. Implemente métodos para escrever (que consome tinta baseado no número de palavras escritas), recarregar (que restaura o nível de tinta para 100) e verificar o nível de tinta atual.
+
+Casos de Teste:
+
+Verificar o nível de tinta após criar a caneta (deve ser 100).
+Escrever um texto que consome uma quantidade de tinta e verificar o nível de tinta após.
+Tentar escrever um texto que exigiria mais tinta do que está disponível e verificar se o nível de tinta vai a 0 (sem exceções).
+Recarregar a caneta e verificar se o nível de tinta é restaurado para 100.
+Escrever vários textos pequenos, consumindo gradualmente a tinta, e verificar se o nível de tinta diminui adequadamente.
+
+--------------------
+
+Exercício 3: Classe Contador
+Descrição: Implemente uma classe Contador que mantém um valor numérico. Deve permitir incrementar e decrementar esse valor, além de obter o valor atual. Também deve ser possível resetar o contador para o valor inicial fornecido na criação do objeto.
+
+Casos de Teste:
+
+Incrementar o valor e verificar se o incremento está correto.
+Decrementar o valor após incrementar e verificar se o decremento está correto.
+Resetar o contador para o valor inicial e verificar se o valor foi resetado corretamente.
+Incrementar o valor várias vezes e verificar se o valor acumula corretamente.
+Decrementar o valor mais vezes do que foi incrementado e verificar se o valor diminui adequadamente.
+
+--------------------
+
+Exercício 4: Classe Cronômetro (Revisado)
+Descrição: Desenvolva uma classe Cronometro que pode ser iniciado e parado, medindo o tempo em segundos. Implemente métodos para iniciar, parar e obter o tempo transcorrido. Não utilize funções de data/hora; simule o tempo transcorrido incrementando um contador.
+
+Casos de Teste:
+
+Iniciar o cronômetro e simular um tempo de espera (incrementando o contador) para verificar se o tempo transcorrido está correto.
+Parar o cronômetro após algum tempo e verificar se o tempo parou de contar.
+Obter o tempo transcorrido após parar e verificar se corresponde ao tempo que o cronômetro estava ativo.
+Resetar o cronômetro e verificar se o tempo transcorrido volta a zero.
+Iniciar novamente após resetar e verificar se o tempo começa a contar a partir do zero.
+
+--------------------
+
+Exercício 5: Implementação de uma Classe Termômetro
+Descrição: Crie uma classe Termometro que simula um termômetro digital. Deve ser capaz de registrar a temperatura atual, aumentar e diminuir a temperatura, e mostrar a temperatura em Celsius e Fahrenheit.
+
+Casos de Teste:
+
+Registrar uma temperatura e verificar se a leitura em Celsius está correta.
+Aumentar a temperatura e verificar a nova leitura em Celsius.
+Diminuir a temperatura e verificar a nova leitura em Celsius.
+Converter a temperatura atual para Fahrenheit e verificar se a conversão está correta.
+Ajustar a temperatura para um valor específico e verificar tanto em Celsius quanto em Fahrenheit.
+
+--------------------
+
+Exercício 6: Classe Pessoa com Construtor
+Descrição: Implemente uma classe Pessoa que possui os atributos nome, idade e email. Use um construtor para inicializar esses atributos no momento da criação do objeto.
+
+Casos de Teste:
+
+Criar uma instância de Pessoa e verificar se o nome está correto.
+Criar uma instância de Pessoa e verificar se a idade está correta.
+Criar uma instância de Pessoa e verificar se o email está correto.
+Criar uma instância com valores extremos para idade (por exemplo, 0 e 120) e verificar se são atribuídos corretamente.
+Tentar criar uma instância de Pessoa com string vazia para nome e verificar se a instância é criada de forma adequada.
+
+--------------------
+
+Exercício 7: Classe Carro com Vários Construtores
+Descrição: Desenvolva uma classe Carro que possui os atributos marca, modelo, ano e cor. Implemente múltiplos construtores para permitir a inicialização de um Carro com diferentes combinações de atributos.
+
+Casos de Teste:
+
+Criar uma instância de Carro apenas com marca e modelo e verificar se os valores estão corretos.
+Criar uma instância de Carro com todos os atributos e verificar se estão corretos.
+Criar instâncias de Carro com diferentes combinações de atributos e verificar cada uma.
+Verificar se o construtor padrão (sem parâmetros) cria um Carro com valores nulos ou padrões.
+Tentar criar um Carro com ano de fabricação no futuro e verificar como a classe lida com isso.
+
+--------------------
+
+Exercício 8: Classe ContaBancaria com Construtor Nomeado
+Descrição: Crie uma classe ContaBancaria que inclui os atributos numeroDaConta, titularDaConta e saldo. Utilize construtores nomeados para permitir a inicialização do saldo com e sem valor inicial.
+
+Casos de Teste:
+
+Criar uma instância de ContaBancaria com saldo inicial e verificar se o saldo está correto.
+Criar uma instância de ContaBancaria sem definir saldo inicial e verificar se o saldo é inicializado com um valor padrão (por exemplo, 0).
+Verificar se o numeroDaConta e titularDaConta são atribuídos corretamente ao usar ambos os construtores.
+Criar uma conta com saldo negativo usando o construtor nomeado e verificar como a classe lida com isso.
+Tentar criar várias instâncias de ContaBancaria com diferentes valores iniciais de saldo e verificar cada saldo.
+
+--------------------
+
+Exercício 9: Classe Livro com Construtor Constante
+Descrição: Implemente uma classe Livro com os atributos titulo, autor e anoPublicacao. Use um construtor constante para garantir a imutabilidade dos objetos Livro.
+
+Casos de Teste:
+
+Criar uma instância constante de Livro e verificar se todos os atributos são inicializados corretamente.
+Tentar modificar um dos atributos de uma instância constante de Livro e verificar se o Dart impede essa ação.
+Criar duas instâncias constante de Livro com os mesmos valores para todos os atributos e verificar se são consideradas iguais.
+Verificar o comportamento ao criar uma instância não constante de Livro com o mesmo construtor.
+Criar livros com anoPublicacao no futuro e verificar como a classe lida com esses valores.
+
+--------------------
+
+Exercício 10: Classe Relogio com Construtor com Parâmetros Opcionais
+Descrição: Desenvolva uma classe Relogio que possui os atributos hora, minuto e segundo. Implemente um construtor que permite a inicialização desses atributos com valores
+
+Exercício 11: Contador de Instâncias
+Descrição: Implemente uma classe Usuario que possui um atributo estático contadorDeInstancias para rastrear quantas instâncias da classe foram criadas. Use um construtor que incrementa esse contador cada vez que um objeto é instanciado.
+
+Casos de Teste:
+
+Verificar se o contadorDeInstancias é 0 antes de criar qualquer instância.
+Criar uma instância de Usuario e verificar se contadorDeInstancias é incrementado corretamente.
+Criar múltiplas instâncias de Usuario e verificar se contadorDeInstancias reflete o número correto de instâncias.
+Resetar o contadorDeInstancias manualmente, se possível, e verificar o comportamento após criar novas instâncias.
+Verificar se contadorDeInstancias pode ser acessado sem criar uma instância de Usuario.
+
+--------------------
+
+Exercício 12: Gerenciador de Configurações
+Descrição: Crie uma classe Configuracoes com propriedades estáticas que armazenam configurações gerais do aplicativo, como idiomaPadrao e temaPadrao. Adicione métodos estáticos para alterar essas configurações.
+
+Casos de Teste:
+
+Verificar os valores padrão das configurações após a inicialização da classe.
+Alterar o idiomaPadrao e verificar se o novo valor é refletido corretamente.
+Alterar o temaPadrao e verificar se o novo valor é refletido corretamente.
+Tentar acessar e modificar as configurações sem instanciar a classe Configuracoes.
+Resetar as configurações para seus valores padrão e verificar se as alterações são aplicadas.
+
+--------------------
+
+Exercício 13: Conversor de Unidades
+Descrição: Desenvolva uma classe ConversorDeUnidades com métodos estáticos para converter entre diferentes unidades de medida (por exemplo, de quilômetros para milhas, de quilogramas para libras).
+
+Casos de Teste:
+
+Converter de quilômetros para milhas e verificar se o resultado está correto.
+Converter de milhas para quilômetros e verificar se o resultado está correto.
+Converter de quilogramas para libras e verificar se o resultado está correto.
+Converter de libras para quilogramas e verificar se o resultado está correto.
+Verificar se os métodos podem ser chamados sem a necessidade de instanciar a classe ConversorDeUnidades.
+
+--------------------
+
+Exercício 14: Gerador de Identificadores Únicos
+Descrição: Implemente uma classe GeradorID que possui um método estático gerarID para criar um identificador único cada vez que é chamado. Use uma propriedade estática para armazenar o último ID gerado.
+
+Casos de Teste:
+
+Gerar um ID e verificar se é único.
+Gerar múltiplos IDs consecutivamente e verificar se todos são únicos.
+Verificar se o valor do último ID gerado é armazenado corretamente na propriedade estática.
+Tentar acessar o método gerarID e a propriedade do último ID sem instanciar a classe.
+Resetar o valor do último ID manualmente, se possível, e gerar novos IDs para verificar o comportamento.
+
+--------------------
+
+Exercício 15: Biblioteca de Funções Matemáticas
+Descrição: Crie uma classe Matematica que contém métodos estáticos para operações matemáticas básicas, como somar, subtrair, multiplicar e dividir, além de métodos para operações mais complexas, como calcular potências e raízes quadradas.
+
+Casos de Teste:
+
+Testar as operações básicas (soma, subtração, multiplicação, divisão) com valores conhecidos e verificar os resultados.
+Calcular a potência de um número e verificar o resultado.
+Calcular a raiz quadrada de um número e verificar o resultado.
+Tentar chamar os métodos matemáticos sem instanciar a classe Matematica.
+Verificar o comportamento da divisão por zero em métodos estáticos, se aplicável.
+
+--------------------
+
+Exercício 16: Controle de Volume
+Descrição: Crie uma classe DispositivoDeSom que possui uma propriedade privada volume (int) que varia de 0 a 100. Implemente getters e setters para controlar o acesso ao volume, assegurando que os valores estejam sempre dentro do intervalo permitido.
+
+Casos de Teste:
+
+Definir o volume dentro do intervalo permitido e verificar se o getter retorna o valor correto.
+Tentar definir o volume acima do máximo permitido e verificar se ele é ajustado para 100.
+Tentar definir o volume abaixo do mínimo permitido e verificar se ele é ajustado para 0.
+Incrementar o volume progressivamente e verificar se o valor é atualizado corretamente.
+Decrementar o volume progressivamente e verificar se o valor é atualizado corretamente.
+
+--------------------
+
+Exercício 17: Gerenciamento de Saldo Bancário
+Descrição: Desenvolva uma classe ContaBancaria com um saldo privado. Implemente um getter para o saldo e um setter que valida se a tentativa de alteração do saldo é para um valor positivo. O setter não deve permitir a definição direta do saldo, mas pode incluir métodos para depositar e sacar, com validação adequada.
+
+Casos de Teste:
+
+Depositar um valor válido e verificar se o saldo é atualizado corretamente.
+Tentar sacar um valor que não exceda o saldo e verificar se a operação é bem-sucedida.
+Tentar sacar um valor que exceda o saldo e verificar se a operação é negada.
+Verificar o saldo usando o getter após operações de depósito e saque.
+Tentar definir o saldo diretamente (se possível) e verificar se a classe impede essa operação.
+
+--------------------
+
+Exercício 18: Monitoramento de Temperatura
+Descrição: Implemente uma classe Termometro que armazena a temperatura em Celsius. Adicione um getter para obter a temperatura em Celsius e outro em Fahrenheit. Não é necessário um setter direto para Fahrenheit, mas deve haver um método para ajustar a temperatura em Celsius.
+
+Casos de Teste:
+
+Definir a temperatura em Celsius e verificar ambas as leituras em Celsius e Fahrenheit.
+Ajustar a temperatura em Celsius para um novo valor e verificar as atualizações nas leituras.
+Verificar a conversão de Celsius para Fahrenheit em vários pontos de referência (p.ex., ponto de congelamento e ebulição da água).
+Tentar definir a temperatura em Fahrenheit diretamente (se o design permitir) e verificar o comportamento.
+Resetar a temperatura para o valor padrão e verificar se as leituras são atualizadas corretamente.
+
+--------------------
+
+Exercício 19: Gestão de Estoque
+Descrição: Crie uma classe Produto com uma quantidade em estoque privada. Utilize getters e setters para controlar o acesso à quantidade de estoque, incluindo validação para garantir que a quantidade nunca seja negativa.
+
+Casos de Teste:
+
+Incrementar a quantidade em estoque e verificar se o valor é atualizado corretamente.
+Tentar reduzir a quantidade em estoque para um valor positivo e verificar a atualização.
+Tentar reduzir a quantidade em estoque para um valor negativo e verificar se a operação é impedida.
+Verificar o valor de estoque através do getter após alterações.
+Resetar a quantidade em estoque para um valor específico e verificar se é atualizado corretamente.
+
+--------------------
+
+Exercício 20: Controle de Acesso a Documentos
+Descrição: Desenvolva uma classe Documento que possui um conteúdo (String) e um nível de acesso (privado, protegido ou público). Implemente getters e setters para ambos os atributos, incluindo lógica de validação que garanta que apenas conteúdos válidos sejam atribuídos e que o nível de acesso seja um dos valores permitidos.
+
+Casos de Teste:
+
+Definir e obter o conteúdo do documento, verificando se a atribuição e recuperação são corretas.
+Alterar o nível de acesso do documento para um valor permitido e verificar se a alteração é bem-sucedida.
+Tentar definir o nível de acesso para um valor não permitido e verificar se a operação é negada.
+Verificar o comportamento do getter de conteúdo com diferentes níveis de acesso.
+Tentar atribuir conteúdo inválido (p.ex., string vazia ou null) e verificar se a operação é impedida.
