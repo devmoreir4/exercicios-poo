@@ -4,6 +4,6 @@ class Livro{
   final String autor;
   final int anoPublicacao;
 
-  Livro(this.titulo, this.autor, this.anoPublicacao);
+  const Livro(this.titulo, this.autor, this.anoPublicacao);
 
 }
